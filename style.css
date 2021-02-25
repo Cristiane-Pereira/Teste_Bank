@@ -1,0 +1,324 @@
+/*=====variable css ====*/
+:root{
+    --nav-width: 92px;
+
+
+    /*===== Colores ====*/
+    --first-color:#743AC2 ;
+    --bg-color: rgb(250, 250, 250) ;
+    --sub-color: #B6CEFC;
+    --white-color:#022a55;
+}
+
+
+
+/*===== Fuente y tipografia ====*/
+:root{
+   --body-font: 'Quicksand', sans-serif; 
+   --normal-font-size:1rem;
+   --small-font-size: 0.875rem;
+
+
+
+   /*===== z index ====*/
+    --z-fixed: 100;
+}
+
+
+
+   /*===== Base ====*/
+   *,::before, ::after{
+       box-sizing: border-box;
+   }
+
+   body{
+       position: relative;
+       margin: 0;
+       padding: 2rem 0 0 6.75rem;
+       font-family: var(--body-font);
+       font-size: var(--normal-font-size);
+       transition: .5s;
+   }
+
+   h1{
+       margin: 0;
+   }
+
+   ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+   }
+   a{
+       text-decoration: none !important;
+   }
+
+
+
+/*===== L NAV ====*/
+.l-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-width);
+    height: 100%;
+    background-color: var(--bg-color);
+    color:  var(--white-color);
+    padding: 1.5rem 1.5rem 2rem;
+    transition: .5s;
+    z-index: var(--z-fixed);
+    border: 1px solid rgb(212, 212, 212);
+}
+
+
+
+/*=====  NAV LATERAL====*/
+.nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav__brand{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.bx-menu{
+    position: relative;
+    font-size: 1.45rem;
+    padding: .75rem;
+    cursor: pointer;
+}
+.nav__logo{
+    color: var(--white-color);
+    font-weight: 600;
+}
+.nav__link{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: .75rem;
+    padding: .75rem;
+    color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav__link:hover{
+    color: white;
+    background-color: var(--first-color);
+}
+
+.nav__text{
+    font-size: var(--small-font-size);
+}
+
+.nav__icon{
+    font-size: 1.45rem;
+}
+
+
+
+/*Expander menu*/
+.expander{
+    width: calc(var(--nav-width) + 9.25rem);
+}
+
+
+
+/*Add padding body*/
+.body-pd{
+    padding: 2rem 0 0 16rem;
+}
+
+
+
+/* Header */
+header{
+    margin-bottom: 0.8rem;
+}
+.nav__logo-icon{
+    width: 113px;
+    margin-top: -2rem;
+}
+.btn{
+    color: var(--white-color);
+    font-size: 13.5px;
+    margin-left: 2rem;
+    margin-top: -1rem;
+    margin-bottom: 15%;
+}
+
+.btn2{
+    background-color: none;
+    color: var(--white-color);
+    font-size: 13.5px;
+    margin-left: 2rem;
+    margin-top: -1rem;
+}
+
+.btn3{
+    color: var(--white-color);
+    font-size: 13.5px;
+    margin-left: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 35%;
+}
+
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-top: -15%;
+    margin-left: 1rem;
+    font-size: 12px;
+    margin-bottom: 20%;
+}
+.conta{
+    color: var(--first-color);
+    
+}
+.Saldo{
+    font-size: 14px;
+    color: rgb(91, 173, 8);
+}
+
+.icon__icon{
+    font-size: 20px;
+    position: fixed;
+}
+
+.icon__icon2{
+    font-size: 1rem;
+    margin-top: 1.4rem;
+   
+}
+
+form {
+    border-radius: 1.2rem;
+    padding-left: 0.3rem;
+    margin-top: -0.5rem;
+    margin-bottom: 8%;
+}
+
+form input,form button{
+    font-size: 1,2rem;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.form-control{
+    height: 2rem;
+    position: relative;
+}
+
+form button {
+    cursor: pointer;
+    background: none;
+    margin-left: 12.4rem;
+    color: var(--white-color);
+    position: absolute;
+    border: none;
+}
+
+.btn__pesquisar:hover{
+    color: white;
+    background-color: var(--first-color);
+}
+
+.icon__lateral{
+  font-size: 1.40rem;
+  color: var(--white-color);
+  padding: 18px;
+  margin-top: -2rem;
+  cursor: pointer;
+
+}
+
+.circulo{
+    font-size: 4rem;
+}
+/* fim de header */
+
+
+
+
+/* section */
+.section{
+    background-color: var(--bg-color);
+    height: 100vh;
+    margin-left: -1rem;
+}
+
+.icon__section{
+    font-size: 1.45rem;
+    padding: 0.8rem;
+    color: var(--white-color);
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.img{
+    width: 35px;
+    height: 35px;
+    padding: -8rem;
+    margin-top: 1rem;
+    margin-right: -2rem;
+}
+
+h2{
+    font-size: max(19px, 2vw);
+    color: var(--white-color);
+    padding-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.botao{
+    border: 1px solid #743AC2;
+    border-radius: 5px;
+    color: #743AC2;
+    width: 4.5rem;
+    height: 2.5rem;
+    margin-top: 1.1rem;
+    cursor: pointer;
+}
+
+.botao:hover{
+    color: white;
+    background-color: var(--first-color);
+}
+
+.icon{
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+
+.menu{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-top: -0.2rem;
+    margin-left: 1rem;
+    font-size: 12px;
+}
+
+.card {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.card-header{
+     border-bottom: 2px solid#743AC2 ;
+}
+.txt {
+    font-size: 15px;
+    color: #743AC2;
+    font-weight: bolder;
+}

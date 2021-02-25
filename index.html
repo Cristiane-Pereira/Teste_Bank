@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Arquivo Bancário</title>
+
+<!-- ESTILOS CSS -------------------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+<!--BOX ICONS CSS ------------------------------------------------------------------------------- -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="body-pd" onload="carregar()">
+  
+   <div id="dados">
+
+<!--Menu Lateral -------------------------------------------------------------------------------------- -->
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+          <div>
+             <div class="nav__brand">
+                <i class='bx bx-menu' id="nav-toggle"></i>
+                <a href="#" class="nav__logo"></a>
+             </div>
+
+              <ul class="nav__list">
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-home nav__icon'></i>
+                     <span class="nav__text">Home</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-pie-chart-alt-2 nav__icon'></i>
+                     <span class="nav__text">Análise</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-line-chart-down nav__icon'></i>
+                     <span class="nav__text">Lucro Anual</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-money nav__icon'></i>
+                     <span class="nav__text">Adicionar Dinheiro</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                    <i class='bx bx-grid-alt nav__icon'></i>
+                     <span class="nav__text">Pix</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-credit-card nav__icon'></i> 
+                     <span class="nav__text">Cartão</span>
+                  </a>
+
+                  <a href="#" class="nav__link active">
+                     <i class='bx bx-barcode-reader nav__icon'></i>
+                     <span class="nav__text">Qrcode</span>
+                  </a>
+                  
+                  <a href="#" class="nav__link active">
+                      <i class='bx bxs-wrench nav__icon'></i>
+                     <span class="nav__text">Configurações</span>
+                  </a>
+
+              </ul>
+          </div>
+        </nav>
+    </div>
+<!-- Fim do menu lateral ------------------------------------------------------------------------ -->
+
+<!--Conteudo do header ---------------------------------------------------------------------------- -->
+   <header>
+      <div class="row">
+
+<!-- LOGO --------------------------------------------------------------------------------------- -->
+        <div class="col-sm-1">
+          <img src="./assets/Nubank_LOGO.png" alt="Nubank" class="nav__logo-icon">
+         </div>
+
+<!--Sessao da conta corrente -------------------------------------------------------------------- -->
+
+         <div class="col-lg-3">
+            <div class="btn-group">
+               <div class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Conta Corrente
+                 <i class='bx bxs-chevron-down icon__icon'></i>
+                 <div class="dropdown-menu">
+                   <span class="conta">Ag. 0005-1 C.C.000000000000020-1</span>
+                   <i class='bx bx-merge icon__icon' id="copiar"></i>
+                </div>
+              </div>
+           </div>
+         </div>
+
+<!-- Fim da Sessao da conta corrente ------------------------------------------------------------- -->
+
+<!-- Sessao do Saldo ----------------------------------------------------------------------------  -->
+
+         <div class="col-sm-3">
+           <div class="btn-group">
+             <div class="btn3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Saldo
+                <i class='bx bx-show-alt icon__icon2'></i>
+               <div class="dropdown-menu ">
+                  <span class="Saldo">R$40.000,00</span>
+               </div>
+            </div>
+          </div>
+        </div>
+
+<!-- FIM DA SESSAO DO SALDO ----------------------------------------------------------------------- -->
+
+<!-- Barra de pesquisa ----------------------------------------------------------------------------- -->
+
+        <div class="col-sm">
+          <form class="form-inline" action="#" method="POST">
+             <input class="form-control mr-sm-2" type="search" name="" id="search" placeholder="Pesquisar" aria-label="Pesquisar">
+             <button type="submit" class="btn__pesquisar"><i class='bx bx-search-alt btn__pesquisar'></i></button>
+          </form>
+        </div>
+        
+
+<!-- Fim da Barra de pesquisa ------------------------------------------------------------------------ -->
+
+<!-- Sessao dos icones laterais ----------------------------------------------------------------------- -->
+
+        <div class="col-sm">
+             <i class='bx bx-comment-detail icon__lateral'></i>
+
+            <i class='bx bx-calendar icon__lateral '></i>
+      
+            <i class='bx bx-bell icon__lateral '></i>
+
+         </div>
+
+<!-- Fim dos icones laterais -------------------------------------------------------------------------- -->
+
+    </div>
+   </header>
+
+<!-- Fim do conteudo header --------------------------------------------------------------------------- -->
+
+<!-- Sessao section ------------------------------------------------------------------------------------- -->
+
+   <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <i class='bx bxs-purchase-tag icon__section'></i>
+            <i class='bx bx-plus-circle icon__section'></i>
+          </div> 
+
+<!-- Sessao de gastos ---------------------------------------------------------------------------------------- -->
+          <div class="col-sm-2">
+            <img src="./assets/1f7e3.png" alt="" class="img">
+
+               <div class="btn-group">
+                 <div class="btn2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Principal
+                    <i class='bx bx-show-alt icon__icon2'></i>
+                   <div class="dropdown-menu menu">
+                      <span class="Saldo">R$40.000,00</span>
+                   </div>
+                </div>
+              </div>
+         </div>
+
+         <div class="col-sm-2">
+            <img src="./assets/1f7e3.png" alt="" class="img">
+
+               <div class="btn-group">
+                 <div class="btn2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Aluguel
+                    <i class='bx bx-show-alt icon__icon2'></i>
+                   <div class="dropdown-menu menu">
+                      <span class="Saldo">R$40.000,00</span>
+                   </div>
+                </div>
+              </div>
+         </div>
+
+         <div class="col-sm-3">
+            <img src="./assets/1f7e3.png" alt="" class="img">
+
+               <div class="btn-group">
+                 <div class="btn2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Alimentação
+                    <i class='bx bx-show-alt icon__icon2'></i>
+                   <div class="dropdown-menu menu">
+                      <span class="Saldo">R$40.000,00</span>
+                   </div>
+                </div>
+             </div>
+         </div>
+
+<!-- Fim de Sessao de gastos ---------------------------------------------------------------------------------------------- -->
+         </div>
+      </div>
+   <hr>
+
+<!-- Sessao de saldo bancario com botoes ----------------------------------------------------------------------------------------- -->
+   
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-3">
+             <h2>Saldo Bancário</h2>
+         </div>
+
+         <div class="col-sm-1">
+            <button type="button" class="botao img-fluid" onclick="funcao_pdf()"><i class='bx bx-printer icon'></i></button>
+         </div>
+
+         <div class="col-sm-1">
+            <button type="button" class="botao img-fluid" download><i class='bx bx-archive-in icon'></i></button>
+         </div>
+
+         <div class="col-sm-7">
+           <button type="button" class="botao img-fluid"><i class='bx bxs-share-alt icon'></i></button>
+         </div>
+      </div>
+   </div>
+
+<!-- Fim de sessao de saldo bancario -------------------------------------------------------------------------------------------  -->
+
+<!-- Sessao de  consulta e saldo atualizado  ----------------------------------------------------------------------------  -->
+
+<br>
+
+<div class="card img-fluid" style="width: 18rem;">
+   <div class="card-header">
+     <span class="txt">Data do saldo</span><br>
+     <span id="data">Aqui vai aparecer a data...</span>
+   </div>
+   <div class="list-group list-group-flush">
+      <div class="list-group-item" id="msg">
+            Aqui vai o horario da atualização do saldo...
+      </div>
+   </div>
+ </div>
+
+<!-- Fim de sessao de consulta e saldo atualizado ----------------------------------------------------------------------------------  -->
+
+</section>
+<!-- Fim de section -------------------------------------------------------------------------------------------------------------- -->
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  
+   </div>
+ </body>
+</html>
+
+
